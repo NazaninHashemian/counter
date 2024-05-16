@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Counter extends Component {
 
     componentDidUpdate(prevProps, prevState){
-        console.log('prevProps',prevProps);
-        console.log('prevState',prevState);
+        console.log('prevProps', prevProps);
+        console.log('prevState', prevState);
         // if (prevProps.counter.value != this.props.counter.value)
         //AXAJ call and get new data from the server
 
@@ -20,12 +20,12 @@ class Counter extends Component {
         return (
             <div class="container text-center">
                 <div class="row align-items-start">
-                    <div class="col-1">
+                    <div class="col-3 col-xs-2 col-sm-1 col-md-1 pt-2 pl-0">
                         <span className={this.getBadgeClasses()}>
                             {this.formatCount()}
                         </span>
                     </div> 
-                    <div class="col-3">
+                    <div class="col-6 col-xs-6 col-sm-4 col-md-3  col-lg-2 px-0">
                         <button 
                             onClick={() => this.props.onIncrement(this.props.counter)} 
                             className='btn btn-secondary btn-sm'>
